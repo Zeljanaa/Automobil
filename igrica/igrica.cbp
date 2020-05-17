@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="igrica" />
+		<Option makefile="makefile" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/igrica" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="../../../SDL/SDL2-2.0.9/i686-w64-mingw32/include" />
+				</Compiler>
+				<Linker>
+					<Add directory="../../../SDL/SDL2-2.0.9/i686-w64-mingw32/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/igrica" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="../SDL2-devel-2.0.9-mingw/SDL2-2.0.9/i686-w64-mingw32/include" />
+		</Compiler>
+		<Linker>
+			<Add option="-lmingw32" />
+			<Add option="-lSDL2main" />
+			<Add option="-lSDL2" />
+			<Add option="-lSDL2_ttf" />
+			<Add option="-lSDL2_image" />
+			<Add directory="../SDL2-devel-2.0.9-mingw/SDL2-2.0.9/i686-w64-mingw32/lib" />
+		</Linker>
+		<Unit filename="automobil.hpp" />
+		<Unit filename="game.hpp" />
+		<Unit filename="game_01.cpp" />
+		<Unit filename="main.cpp" />
+		<Unit filename="mapa.hpp" />
+		<Unit filename="novcic.hpp" />
+		<Unit filename="prepreka.hpp" />
+		<Unit filename="put.hpp" />
+		<Unit filename="score.hpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
